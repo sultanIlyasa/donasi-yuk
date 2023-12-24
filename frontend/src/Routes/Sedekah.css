@@ -1,0 +1,24 @@
+header {
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+
+p {
+  /* padding: 0 250px 60px 250px; */
+}
+header {
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+
+p {
+  /* padding: 0 250px 60px 250px; */
+}
+
+.submit-sedekah button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #82e41e;
+}

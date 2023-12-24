@@ -1,0 +1,203 @@
+.NavbarItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #c7f2a4;
+  padding: 0 30px;
+  box-shadow: 0 1px 10px 0px #888;
+}
+.nav-logo {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.nav-search {
+  display: flex;
+  padding: 0.4rem 10px;
+  margin: 0 10px;
+  border-radius: 16px;
+  width: 400px;
+  background-color: white;
+}
+
+.nav-search img {
+  width: 16px;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.nav-search input {
+  font-size: large;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  height: auto;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.nav-links:hover {
+  color: #82e41e;
+}
+
+.nav-links-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links-mobile button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button-login {
+  margin: 0 10px 0 0;
+  background-color: white;
+}
+
+.nav-button-login:hover {
+  background-color: #82e41e;
+}
+
+.nav-button-daftar {
+  background-color: #82e41e;
+}
+
+.nav-button-daftar:hover {
+  color: #ffff;
+  background-color: #82e41e;
+}
+
+.nav-button-profile {
+  margin: 0 10px 0 0;
+  background-color: white;
+}
+
+.nav-button-profile:hover {
+  background-color: #82e41e;
+}
+
+.nav-button-logout {
+  background-color: #e41e1e;
+}
+
+.nav-button-logout:hover {
+  color: #ffff;
+  background-color: #e41e1e;
+}
+
+.nav-menu-icon {
+  display: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-menu-icon img {
+  width: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .nav-links {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-menu-icon {
+    display: block;
+    z-index: 999;
+  }
+
+  .nav-search {
+    margin: 0 20px;
+    width: 70%;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffff;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    align-items: center;
+    position: absolute;
+    padding: 100px 0 30px 0;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 10px 2px #c7f2a4;
+    transition: 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  .nav-menu.active {
+    top: -15px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-links-mobile {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .nav-button-login {
+    margin: 20px 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-button-daftar {
+    width: 100%;
+  }
+
+  .nav-button-profile {
+    margin: 20px 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-button-logout {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: block;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .nav-links:hover {
+    background-color: #ffff;
+    color: #82e41e;
+  }
+}
